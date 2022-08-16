@@ -30,19 +30,19 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Listadeproductos));
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxcliente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.productosdataGridView = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBoxproducto = new System.Windows.Forms.ComboBox();
+            this.comboBoxtamaño = new System.Windows.Forms.ComboBox();
+            this.textBoxcantidad = new System.Windows.Forms.TextBox();
+            this.textBoxentrega = new System.Windows.Forms.TextBox();
+            this.textBoxprecio = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -51,18 +51,18 @@
             this.button1 = new System.Windows.Forms.Button();
             this.Aceptarbutton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productosdataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxcliente
             // 
-            this.textBox1.Location = new System.Drawing.Point(269, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 20);
-            this.textBox1.TabIndex = 23;
+            this.textBoxcliente.Location = new System.Drawing.Point(269, 15);
+            this.textBoxcliente.Name = "textBoxcliente";
+            this.textBoxcliente.Size = new System.Drawing.Size(193, 20);
+            this.textBoxcliente.TabIndex = 23;
             // 
             // label5
             // 
@@ -115,24 +115,24 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "Cliente:";
             // 
-            // dataGridView1
+            // productosdataGridView
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.MistyRose;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 268);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(680, 170);
-            this.dataGridView1.TabIndex = 17;
+            this.productosdataGridView.BackgroundColor = System.Drawing.Color.MistyRose;
+            this.productosdataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.productosdataGridView.Location = new System.Drawing.Point(12, 268);
+            this.productosdataGridView.Name = "productosdataGridView";
+            this.productosdataGridView.Size = new System.Drawing.Size(680, 170);
+            this.productosdataGridView.TabIndex = 17;
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // comboBox1
+            // comboBoxproducto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxproducto.FormattingEnabled = true;
+            this.comboBoxproducto.Items.AddRange(new object[] {
             "Factura",
             "Factura por Honorarios",
             "Ricibos",
@@ -143,15 +143,15 @@
             "Sobres",
             "Papel membretado ",
             "Afiches "});
-            this.comboBox1.Location = new System.Drawing.Point(269, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(192, 21);
-            this.comboBox1.TabIndex = 34;
+            this.comboBoxproducto.Location = new System.Drawing.Point(269, 52);
+            this.comboBoxproducto.Name = "comboBoxproducto";
+            this.comboBoxproducto.Size = new System.Drawing.Size(192, 21);
+            this.comboBoxproducto.TabIndex = 34;
             // 
-            // comboBox2
+            // comboBoxtamaño
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.comboBoxtamaño.FormattingEnabled = true;
+            this.comboBoxtamaño.Items.AddRange(new object[] {
             "Cuarto de carta (4.2 x 5.5) pulgadas",
             "Rifa (2.5 x 11) pulgadas",
             "Media Carta (8.5 x 5.5) pulgadas",
@@ -164,31 +164,31 @@
             "A4 (210 x 287) Milimetros",
             "A5 (148 x 210) Milimetros",
             ""});
-            this.comboBox2.Location = new System.Drawing.Point(270, 87);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(192, 21);
-            this.comboBox2.TabIndex = 35;
+            this.comboBoxtamaño.Location = new System.Drawing.Point(270, 87);
+            this.comboBoxtamaño.Name = "comboBoxtamaño";
+            this.comboBoxtamaño.Size = new System.Drawing.Size(192, 21);
+            this.comboBoxtamaño.TabIndex = 35;
             // 
-            // textBox2
+            // textBoxcantidad
             // 
-            this.textBox2.Location = new System.Drawing.Point(270, 123);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 20);
-            this.textBox2.TabIndex = 38;
+            this.textBoxcantidad.Location = new System.Drawing.Point(270, 123);
+            this.textBoxcantidad.Name = "textBoxcantidad";
+            this.textBoxcantidad.Size = new System.Drawing.Size(191, 20);
+            this.textBoxcantidad.TabIndex = 38;
             // 
-            // textBox3
+            // textBoxentrega
             // 
-            this.textBox3.Location = new System.Drawing.Point(270, 158);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(191, 20);
-            this.textBox3.TabIndex = 39;
+            this.textBoxentrega.Location = new System.Drawing.Point(270, 158);
+            this.textBoxentrega.Name = "textBoxentrega";
+            this.textBoxentrega.Size = new System.Drawing.Size(191, 20);
+            this.textBoxentrega.TabIndex = 39;
             // 
-            // textBox4
+            // textBoxprecio
             // 
-            this.textBox4.Location = new System.Drawing.Point(270, 192);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(191, 20);
-            this.textBox4.TabIndex = 41;
+            this.textBoxprecio.Location = new System.Drawing.Point(270, 192);
+            this.textBoxprecio.Name = "textBoxprecio";
+            this.textBoxprecio.Size = new System.Drawing.Size(191, 20);
+            this.textBoxprecio.TabIndex = 41;
             // 
             // label6
             // 
@@ -203,7 +203,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::sistema_imprenta.Properties.Resources._1234;
-            this.pictureBox3.Location = new System.Drawing.Point(46, 130);
+            this.pictureBox3.Location = new System.Drawing.Point(22, 130);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(109, 87);
             this.pictureBox3.TabIndex = 43;
@@ -287,28 +287,30 @@
             this.ClientSize = new System.Drawing.Size(705, 450);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxprecio);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBoxentrega);
+            this.Controls.Add(this.textBoxcantidad);
+            this.Controls.Add(this.comboBoxtamaño);
+            this.Controls.Add(this.comboBoxproducto);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Aceptarbutton);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxcliente);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.productosdataGridView);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Listadeproductos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = " Lista de Productos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Listadeproductos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.productosdataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -323,19 +325,19 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Aceptarbutton;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxcliente;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView productosdataGridView;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBoxproducto;
+        private System.Windows.Forms.ComboBox comboBoxtamaño;
+        private System.Windows.Forms.TextBox textBoxcantidad;
+        private System.Windows.Forms.TextBox textBoxentrega;
+        private System.Windows.Forms.TextBox textBoxprecio;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;

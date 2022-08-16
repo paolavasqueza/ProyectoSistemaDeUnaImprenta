@@ -21,5 +21,35 @@ namespace sistema_imprenta
         {
 
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void listaDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Usuarios users = new Usuarios();
+            users.Show();
+        }
+
+        private void listaDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Listadeclientes client = new Listadeclientes();
+            client.Show();
+
+        }
+
+        private void listaDeProductosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Listadeproductos products = new Listadeproductos();
+            products.Show();
+        }
+
+        private void nuevaFacturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Factura bill = new Factura();
+            bill.Show();    
+        }
     }
 }
