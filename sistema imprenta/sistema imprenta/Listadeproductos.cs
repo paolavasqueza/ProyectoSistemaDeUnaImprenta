@@ -72,12 +72,7 @@ namespace sistema_imprenta
 
         }
 
-        private void Aceptarbutton_Click(object sender, EventArgs e)
-        {
-            HabilitarControles();
-            operacion = "Nuevo";
-
-        }
+      
         private void LlenarDataGrid()
         {
 
@@ -157,6 +152,12 @@ namespace sistema_imprenta
         private void textBoxcliente_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Aceptarbutton_Click_1(object sender, EventArgs e)
+        {
+            HabilitarControles();
+            operacion = "Nuevo";
         }
     }
 }
